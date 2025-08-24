@@ -1,0 +1,21 @@
+## Value at Risk (VaR) Calculation Scripts
+
+The Python scripts in this folder are functional prototypes for the risk analysis module of the **Quant-AI platform**. They demonstrate the capability to quantify potential portfolio losses using three industry-standard methodologies.
+
+This analytical capability is crucial for our project, as the quantified risk will serve as a key input for dynamically adjusting the discount rate (WACC) in our automated DCF valuation models.
+
+---
+
+### Methodologies Implemented:
+
+* **`Monte_Carlo.py`**
+    * **Method:** This script uses Monte Carlo simulation to model the potential future returns of a portfolio. It generates thousands of random scenarios to build a probability distribution of gains and losses.
+    * **Relevance:** It calculates VaR by identifying the cutoff point (e.g., the 99th percentile) in this simulated distribution, providing a forward-looking risk estimate.
+
+* **`Historial_Method.py`**
+    * **Method:** This script calculates VaR based on the actual historical returns of the assets in the portfolio. It assumes that future performance will follow a similar pattern to past performance.
+    * **Relevance:** It provides a non-parametric, empirical measure of risk by finding the worst-performing periods in the dataset.
+
+* **`Parametric_Method.py` (Variance-Covariance)**
+    * **Method:** This script uses the parametric or variance-covariance method. It calculates the portfolio's expected return and standard deviation, assuming that returns are normally distributed.
+    * **Relevance:** It provides a quick and efficient way to calculate VaR based on statistical properties, which is highly suitable for an automated platform.
