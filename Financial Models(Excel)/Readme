@@ -1,0 +1,12 @@
+## Financial Models (Excel) - Project Blueprints
+
+The files in this folder represent the architectural blueprints and target outputs for the **Quant-AI platform's** automated modeling engine.
+
+They demonstrate a comprehensive understanding of financial valuation mechanics and serve as the structural templates for what our final application will produce automatically.
+
+### Key Models:
+
+* **`TAMO - FS Analysis.xlsx`**: This is a detailed three-statement financial model with historical analysis, ratio analysis, and forecasting. It serves as the primary blueprint for the platform's core model-generation feature.
+* **`Beta.xlsx`**: A complete WACC (Weighted Average Cost of Capital) and Beta calculation model using comparable company analysis. This file outlines the precise logic our platform will use to automatically calculate the discount rate for DCF valuations.
+* **`Advanced Excel.xlsx`**: This workbook contains examples of Scenario Manager, Data Tables, and Goal Seek. It showcases the types of advanced sensitivity and scenario analysis that will be integrated into the Quant-AI platform, allowing users to test the impact of different assumptions.
+* **'Forecasting.xlsx'** : This is a quantitative forecasting of a company. It uses Linear Regression to predict the Sales and Sales Growth for the next 5 years of a company.
