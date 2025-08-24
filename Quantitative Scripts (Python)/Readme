@@ -1,0 +1,10 @@
+## Quantitative Scripts (Python) - Engine Components
+
+The scripts in this folder are the functional building blocks and proof-of-concept components for the **Quant-AI platform's** backend engine.
+
+They demonstrate the technical ability to interact with financial data APIs, perform statistical analysis, and execute the core calculations required for automated valuation.
+
+### Key Scripts:
+
+* **`Beta.py`**: This script automatically fetches market and stock data from `yfinance` and uses a linear regression model (`scikit-learn`) to calculate a stock's beta. This is the direct prototype for the module that will calculate the Cost of Equity ($k_e$).
+* **`VaR Scripts (Monte_Carlo.py, Historial_Method.py, Parametric_Method.py)`**: These scripts calculate Value at Risk (VaR) using multiple industry-standard methods. They showcase our capability to perform sophisticated risk analysis on financial data, a concept that will be used to inform the risk premium in our automated WACC calculations.
